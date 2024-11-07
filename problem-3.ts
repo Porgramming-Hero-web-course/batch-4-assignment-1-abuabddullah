@@ -3,6 +3,7 @@ Write a TypeScript function countWordOccurrences that takes a sentence (string) 
 */
 {
   const countWordOccurrences = (strg: string, wrd: string): number => {
+    // প্রাপ্ত strg কে split করে arra পাচ্ছি সেটাকে filter করে শুধু wrd ওয়ালা elems নিচ্ছি ও তার lngth বের করছি
     return strg
       .toLowerCase()
       .split(" ")
@@ -12,6 +13,6 @@ Write a TypeScript function countWordOccurrences that takes a sentence (string) 
   };
   console.log(
     "🚀 ~ countWordOccurrences ~ countWordOccurrences:",
-    countWordOccurrences("TypeScript is great. I love TypeScript", "typescript")
+    countWordOccurrences("I love typescript", "typescript")
   );
 }

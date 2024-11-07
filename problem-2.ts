@@ -3,6 +3,7 @@ Create a TypeScript function removeDuplicates that accepts an array of numbers a
 */
 {
   const removeDuplicates = (arr: number[]): number[] => {
+    // Set constructor সকল array elem কে {e1,e2,e3,e4} এভাবে নিচ্ছে অতঃপর spread opt তাদের একটা array তে convert করছে
     return [...new Set(arr)];
   };
   console.log(

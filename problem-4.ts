@@ -13,6 +13,7 @@ Define a union type Circle and Rectangle, where each type has a unique shape pro
   };
 
   const calculateShapeArea = (objct: TCircle | TRectangle) => {
+    // যদি objct এ property হিসেবে "radius" তাহলে সে "TCircle" নতুবা "TRectangle"
     if ("radius" in objct) {
       const circleArea = Math.PI * objct.radius * objct.radius;
       return circleArea.toFixed(2);

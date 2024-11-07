@@ -18,7 +18,7 @@ dfsdfDefine an interface Profile with properties name, age, and email. Create a 
     objct: IPersonType,
     upInfObj: Partial<IPersonType>
   ): IPersonType => {
-    return { ...objct, ...upInfObj };
+    return { ...objct, ...upInfObj }; // বাহ্যিক ভাবে ---> { ...objct, name: "Asif A Owadud" }
   };
   console.log(
     "🚀 ~ updateProfile:",

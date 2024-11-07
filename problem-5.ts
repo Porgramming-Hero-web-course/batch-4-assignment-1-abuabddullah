@@ -18,6 +18,6 @@ Write a generic function getProperty that takes an object and a property name as
 
   console.log(
     "🚀 ~ getProperty ~ getProperty:",
-    getProperty<IBookType, keyof IBookType>(bookObj, "title")
+    getProperty<IBookType, keyof IBookType>(bookObj, "title") // এখানে keyof IBookType হচ্ছে "title" এর type
   );
 }

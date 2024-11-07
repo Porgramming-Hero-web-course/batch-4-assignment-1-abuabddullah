@@ -13,7 +13,7 @@ Create a TypeScript class Car with properties make, model, and year. Include a m
     }
 
     getCarAge() {
-      const currentYear = new Date().getFullYear();
+      const currentYear = new Date().getFullYear(); // বর্তমান সাল পাওয়া যাচ্ছে
       return currentYear - this.year;
     }
   }
