@@ -80,8 +80,8 @@ suppose we have a problem:
 > Given the TypeScript code that defines a base class `Animal` with properties `name` and `species`, and two subclasses `Dog` and `Cat` that extend `Animal` and each have their own unique methods (`makeBark` for `Dog` and `makeMeaw` for `Cat`), along with type guards `isDog` and `isCat` to check if an animal is an instance of `Dog` or `Cat`, how would you use the type guards `isDog` and `isCat` to differentiate between instances of `Dog` and `Cat`? Additionally, what are the expected behaviors when calling methods like `makeBark` and `makeMeaw` on instances of `Dog` and `Cat`, respectively?
 
 #### Analysis
-This problem we will solve by using **instanceof ** to check the type and do further operations.
-
+This problem we will solve by using **instanceof ** to check the type and do further operations. Like when we have an object but we want to check if that object is instance of the required class then we can do it by using 
+*instanceof* Type guard. The code example is bellow,
 ```
 class Animal {
   name: string;
